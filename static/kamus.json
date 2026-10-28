@@ -1,74 +1,470 @@
 [
- {"t": ["masa reses", "reses"], "a": "Waktu anggota DPR nggak rapat di Jakarta dan pulang ke daerah pemilihannya buat ketemu warga."},
- {"t": ["masa sidang", "masa persidangan"], "a": "Waktu anggota DPR kerja di Jakarta: rapat, bahas undang-undang, bahas anggaran."},
- {"t": ["dapil", "daerah pemilihan"], "a": "Wilayah yang diwakili seorang anggota DPR, tempat dia dipilih waktu pemilu."},
- {"t": ["rapat paripurna", "paripurna"], "a": "Rapat besar semua anggota DPR. Keputusan resmi DPR diketok di sini."},
- {"t": ["RDPU"], "a": "Rapat buat dengerin masukan dari luar pemerintah: pakar, organisasi, warga."},
- {"t": ["RDP"], "a": "Rapat komisi DPR dengan pejabat di bawah menteri, misalnya kepala lembaga atau dirjen."},
- {"t": ["raker", "rapat kerja"], "a": "Rapat komisi DPR langsung dengan menteri atau pimpinan lembaga setingkat menteri."},
- {"t": ["panja", "panitia kerja"], "a": "Tim kecil di DPR yang bahas satu urusan lebih detail."},
- {"t": ["pansus"], "a": "Panitia khusus: tim sementara DPR buat satu urusan tertentu, misalnya satu RUU."},
- {"t": ["fraksi"], "a": "Kelompok anggota DPR dari partai yang sama."},
- {"t": ["komisi"], "a": "Kelompok kerja DPR yang ngurus bidang tertentu. Misalnya Komisi III ngurus hukum."},
- {"t": ["Baleg", "Badan Legislasi"], "a": "Bagian DPR yang ngatur dan ngecek penyusunan undang-undang."},
- {"t": ["Banggar", "Badan Anggaran"], "a": "Bagian DPR yang bahas APBN bareng pemerintah."},
- {"t": ["BAM", "Badan Aspirasi Masyarakat"], "a": "Bagian DPR yang nerima keluhan dan aspirasi langsung dari warga."},
- {"t": ["RUU"], "a": "Rancangan undang-undang: calon UU yang masih dibahas, belum berlaku."},
- {"t": ["usul inisiatif DPR", "RUU inisiatif"], "a": "RUU yang diusulkan DPR sendiri, bukan pemerintah."},
- {"t": ["tingkat I", "tingkat 1", "tingkat satu"], "a": "Babak pertama bahas RUU: dibahas detail di komisi atau badan bareng pemerintah."},
- {"t": ["tingkat II", "tingkat 2", "tingkat dua"], "a": "Babak final RUU di rapat paripurna: disahkan atau nggak."},
- {"t": ["DIM", "daftar inventarisasi masalah"], "a": "Daftar tanggapan pasal per pasal atas draf RUU."},
- {"t": ["naskah akademik"], "a": "Dokumen kajian yang jelasin kenapa sebuah RUU perlu dibuat dan isinya apa."},
- {"t": ["kuorum"], "a": "Jumlah minimal yang hadir supaya rapat sah."},
- {"t": ["aklamasi"], "a": "Semua setuju tanpa voting."},
- {"t": ["skors"], "a": "Rapat di-pause sebentar, nanti dilanjut."},
- {"t": ["uji kelayakan", "fit and proper test"], "a": "Tes DPR buat calon pejabat sebelum disetujui."},
- {"t": ["mitra kerja"], "a": "Kementerian atau lembaga yang diawasi sebuah komisi DPR."},
- {"t": ["APBN"], "a": "Anggaran negara setahun: berapa uang masuk dan buat apa aja dibelanjain."},
- {"t": ["APBD"], "a": "Anggaran pemerintah daerah setahun."},
- {"t": ["RAPBN"], "a": "Rancangan APBN yang diusulkan pemerintah, sebelum disetujui DPR."},
- {"t": ["defisit"], "a": "Belanja lebih gede dari pemasukan. Kekurangannya ditutup pakai utang."},
- {"t": ["PNBP"], "a": "Pemasukan negara selain pajak, misalnya dari tambang, layanan, dan denda."},
- {"t": ["TKD", "transfer ke daerah"], "a": "Uang dari APBN yang dikirim ke pemda dan desa."},
- {"t": ["DAU", "dana alokasi umum"], "a": "Uang dari pusat ke daerah yang bebas dipakai buat kebutuhan dasar, kayak gaji pegawai."},
- {"t": ["DAK", "dana alokasi khusus"], "a": "Uang dari pusat ke daerah yang cuma boleh dipakai buat kegiatan tertentu."},
- {"t": ["dana bagi hasil", "DBH"], "a": "Bagian daerah dari pajak dan hasil tambang yang dipungut pusat."},
- {"t": ["SAL", "saldo anggaran lebih"], "a": "Sisa uang negara dari tahun-tahun sebelumnya."},
- {"t": ["mandatory spending"], "a": "Belanja yang wajib menurut aturan, misalnya minimal 20 persen APBN buat pendidikan."},
- {"t": ["BPK"], "a": "Badan Pemeriksa Keuangan: lembaga yang ngaudit cara negara pakai uang."},
- {"t": ["BPKP"], "a": "Pengawas keuangan internal milik pemerintah sendiri."},
- {"t": ["IHPS"], "a": "Rapor enam bulanan BPK soal temuan pemakaian uang negara."},
- {"t": ["WTP", "wajar tanpa pengecualian"], "a": "Nilai terbaik dari BPK buat laporan keuangan. Bukan jaminan bebas korupsi."},
- {"t": ["maladministrasi"], "a": "Layanan publik yang nggak beres: lambat, minta uang, pilih kasih, atau melanggar prosedur."},
- {"t": ["WBP", "warga binaan"], "a": "Sebutan resmi buat orang yang lagi menjalani hukuman di lapas."},
- {"t": ["lapas"], "a": "Lembaga pemasyarakatan, alias penjara."},
- {"t": ["rutan"], "a": "Rumah tahanan: tempat orang ditahan selama kasusnya masih diproses."},
- {"t": ["sidak"], "a": "Inspeksi mendadak, datang ngecek tanpa kasih tahu dulu."},
- {"t": ["pungli"], "a": "Pungutan liar: minta uang di luar aturan."},
- {"t": ["P3K paruh waktu", "PPPK paruh waktu"], "a": "Pegawai kontrak pemerintah yang kerjanya nggak full, gajinya juga lebih kecil."},
- {"t": ["P3K", "PPPK"], "a": "Pegawai pemerintah dengan kontrak kerja, bukan PNS."},
- {"t": ["ASN"], "a": "Aparatur sipil negara: PNS dan P3K."},
- {"t": ["honorer"], "a": "Pekerja di instansi pemerintah yang belum berstatus ASN, biasanya gajinya kecil."},
- {"t": ["TPG", "tunjangan profesi guru"], "a": "Tunjangan buat guru yang udah punya sertifikat pendidik."},
- {"t": ["PPG"], "a": "Pendidikan profesi guru, jalur buat dapet sertifikat pendidik."},
- {"t": ["Dapodik"], "a": "Database resmi sekolah, guru, dan murid."},
- {"t": ["Sisdiknas"], "a": "Sistem Pendidikan Nasional, nama UU utama soal pendidikan."},
- {"t": ["kodifikasi"], "a": "Ngegabungin beberapa undang-undang jadi satu."},
- {"t": ["NCB", "non-conviction based"], "a": "Merampas aset tanpa nunggu pelakunya divonis bersalah."},
- {"t": ["illicit enrichment"], "a": "Kekayaan pejabat yang naik nggak wajar dan nggak bisa dijelasin asalnya."},
- {"t": ["in rem"], "a": "Gugatan terhadap bendanya (asetnya), bukan orangnya."},
- {"t": ["iktikad baik", "itikad baik"], "a": "Jujur dan nggak tahu kalau ada masalah, misalnya beli barang tanpa tahu asalnya dari kejahatan."},
- {"t": ["due process"], "a": "Proses hukum yang adil: ada bukti, ada hakim, ada kesempatan membela diri."},
- {"t": ["DPO"], "a": "Daftar pencarian orang alias buronan."},
- {"t": ["red notice"], "a": "Permintaan internasional lewat Interpol buat nyari buronan."},
- {"t": ["TPPU"], "a": "Tindak pidana pencucian uang: nyamarin asal uang hasil kejahatan."},
- {"t": ["KUHP"], "a": "Kitab hukum pidana: daftar perbuatan yang dilarang dan hukumannya."},
- {"t": ["KUHAP"], "a": "Aturan cara jalannya proses pidana: dari penyidikan sampai sidang."},
- {"t": ["putusan MK", "Mahkamah Konstitusi"], "a": "Pengadilan yang ngecek apakah sebuah UU sesuai UUD 1945. Putusannya wajib diikuti."},
- {"t": ["inkrah", "berkekuatan hukum tetap"], "a": "Putusan pengadilan yang udah final, nggak bisa dibanding lagi."},
- {"t": ["MBG"], "a": "Makan Bergizi Gratis, program makan gratis dari pemerintah."},
- {"t": ["BPIH"], "a": "Total biaya haji per jemaah, sebagian dibayar jemaah dan sebagian dari dana kelola haji."},
- {"t": ["Dewas"], "a": "Dewan pengawas sebuah lembaga."},
- {"t": ["Kapolri"], "a": "Kepala Kepolisian RI, pimpinan tertinggi polisi."},
- {"t": ["Ombudsman"], "a": "Lembaga negara yang ngawasin layanan publik dan nerima aduan warga."}
+ {
+  "t": [
+   "masa reses",
+   "reses"
+  ],
+  "a": "Waktu anggota DPR nggak rapat di Jakarta dan pulang ke daerah pemilihannya buat ketemu warga."
+ },
+ {
+  "t": [
+   "masa sidang",
+   "masa persidangan"
+  ],
+  "a": "Waktu anggota DPR kerja di Jakarta: rapat, bahas undang-undang, bahas anggaran."
+ },
+ {
+  "t": [
+   "dapil",
+   "daerah pemilihan"
+  ],
+  "a": "Wilayah yang diwakili seorang anggota DPR, tempat dia dipilih waktu pemilu."
+ },
+ {
+  "t": [
+   "rapat paripurna",
+   "paripurna"
+  ],
+  "a": "Rapat besar semua anggota DPR. Keputusan resmi DPR diketok di sini."
+ },
+ {
+  "t": [
+   "RDPU"
+  ],
+  "a": "Rapat buat dengerin masukan dari luar pemerintah: pakar, organisasi, warga."
+ },
+ {
+  "t": [
+   "RDP"
+  ],
+  "a": "Rapat komisi DPR dengan pejabat di bawah menteri, misalnya kepala lembaga atau dirjen."
+ },
+ {
+  "t": [
+   "raker",
+   "rapat kerja"
+  ],
+  "a": "Rapat komisi DPR langsung dengan menteri atau pimpinan lembaga setingkat menteri."
+ },
+ {
+  "t": [
+   "panja",
+   "panitia kerja"
+  ],
+  "a": "Tim kecil di DPR yang bahas satu urusan lebih detail."
+ },
+ {
+  "t": [
+   "pansus"
+  ],
+  "a": "Panitia khusus: tim sementara DPR buat satu urusan tertentu, misalnya satu RUU."
+ },
+ {
+  "t": [
+   "fraksi"
+  ],
+  "a": "Kelompok anggota DPR dari partai yang sama."
+ },
+ {
+  "t": [
+   "komisi"
+  ],
+  "a": "Kelompok kerja DPR yang ngurus bidang tertentu. Misalnya Komisi III ngurus hukum."
+ },
+ {
+  "t": [
+   "Baleg",
+   "Badan Legislasi"
+  ],
+  "a": "Bagian DPR yang ngatur dan ngecek penyusunan undang-undang."
+ },
+ {
+  "t": [
+   "Banggar",
+   "Badan Anggaran"
+  ],
+  "a": "Bagian DPR yang bahas APBN bareng pemerintah."
+ },
+ {
+  "t": [
+   "BAM",
+   "Badan Aspirasi Masyarakat"
+  ],
+  "a": "Bagian DPR yang nerima keluhan dan aspirasi langsung dari warga."
+ },
+ {
+  "t": [
+   "RUU"
+  ],
+  "a": "Rancangan undang-undang: calon UU yang masih dibahas, belum berlaku."
+ },
+ {
+  "t": [
+   "usul inisiatif DPR",
+   "RUU inisiatif"
+  ],
+  "a": "RUU yang diusulkan DPR sendiri, bukan pemerintah."
+ },
+ {
+  "t": [
+   "tingkat I",
+   "tingkat 1",
+   "tingkat satu"
+  ],
+  "a": "Babak pertama bahas RUU: dibahas detail di komisi atau badan bareng pemerintah."
+ },
+ {
+  "t": [
+   "tingkat II",
+   "tingkat 2",
+   "tingkat dua"
+  ],
+  "a": "Babak final RUU di rapat paripurna: disahkan atau nggak."
+ },
+ {
+  "t": [
+   "DIM",
+   "daftar inventarisasi masalah"
+  ],
+  "a": "Daftar tanggapan pasal per pasal atas draf RUU."
+ },
+ {
+  "t": [
+   "naskah akademik"
+  ],
+  "a": "Dokumen kajian yang jelasin kenapa sebuah RUU perlu dibuat dan isinya apa."
+ },
+ {
+  "t": [
+   "kuorum"
+  ],
+  "a": "Jumlah minimal yang hadir supaya rapat sah."
+ },
+ {
+  "t": [
+   "aklamasi"
+  ],
+  "a": "Semua setuju tanpa voting."
+ },
+ {
+  "t": [
+   "skors"
+  ],
+  "a": "Rapat di-pause sebentar, nanti dilanjut."
+ },
+ {
+  "t": [
+   "uji kelayakan",
+   "fit and proper test"
+  ],
+  "a": "Tes DPR buat calon pejabat sebelum disetujui."
+ },
+ {
+  "t": [
+   "mitra kerja"
+  ],
+  "a": "Kementerian atau lembaga yang diawasi sebuah komisi DPR."
+ },
+ {
+  "t": [
+   "APBN"
+  ],
+  "a": "Anggaran negara setahun: berapa uang masuk dan buat apa aja dibelanjain."
+ },
+ {
+  "t": [
+   "APBD"
+  ],
+  "a": "Anggaran pemerintah daerah setahun."
+ },
+ {
+  "t": [
+   "RAPBN"
+  ],
+  "a": "Rancangan APBN yang diusulkan pemerintah, sebelum disetujui DPR."
+ },
+ {
+  "t": [
+   "defisit"
+  ],
+  "a": "Belanja lebih gede dari pemasukan. Kekurangannya ditutup pakai utang."
+ },
+ {
+  "t": [
+   "PNBP"
+  ],
+  "a": "Pemasukan negara selain pajak, misalnya dari tambang, layanan, dan denda."
+ },
+ {
+  "t": [
+   "TKD",
+   "transfer ke daerah"
+  ],
+  "a": "Uang dari APBN yang dikirim ke pemda dan desa."
+ },
+ {
+  "t": [
+   "DAU",
+   "dana alokasi umum"
+  ],
+  "a": "Uang dari pusat ke daerah yang bebas dipakai buat kebutuhan dasar, kayak gaji pegawai."
+ },
+ {
+  "t": [
+   "DAK",
+   "dana alokasi khusus"
+  ],
+  "a": "Uang dari pusat ke daerah yang cuma boleh dipakai buat kegiatan tertentu."
+ },
+ {
+  "t": [
+   "dana bagi hasil",
+   "DBH"
+  ],
+  "a": "Bagian daerah dari pajak dan hasil tambang yang dipungut pusat."
+ },
+ {
+  "t": [
+   "SAL",
+   "saldo anggaran lebih"
+  ],
+  "a": "Sisa uang negara dari tahun-tahun sebelumnya."
+ },
+ {
+  "t": [
+   "mandatory spending"
+  ],
+  "a": "Belanja yang wajib menurut aturan, misalnya minimal 20 persen APBN buat pendidikan."
+ },
+ {
+  "t": [
+   "BPK"
+  ],
+  "a": "Badan Pemeriksa Keuangan: lembaga yang ngaudit cara negara pakai uang."
+ },
+ {
+  "t": [
+   "BPKP"
+  ],
+  "a": "Pengawas keuangan internal milik pemerintah sendiri."
+ },
+ {
+  "t": [
+   "IHPS"
+  ],
+  "a": "Rapor enam bulanan BPK soal temuan pemakaian uang negara."
+ },
+ {
+  "t": [
+   "WTP",
+   "wajar tanpa pengecualian"
+  ],
+  "a": "Nilai terbaik dari BPK buat laporan keuangan. Bukan jaminan bebas korupsi."
+ },
+ {
+  "t": [
+   "maladministrasi"
+  ],
+  "a": "Layanan publik yang nggak beres: lambat, minta uang, pilih kasih, atau melanggar prosedur."
+ },
+ {
+  "t": [
+   "WBP",
+   "warga binaan"
+  ],
+  "a": "Sebutan resmi buat orang yang lagi menjalani hukuman di lapas."
+ },
+ {
+  "t": [
+   "lapas"
+  ],
+  "a": "Lembaga pemasyarakatan, alias penjara."
+ },
+ {
+  "t": [
+   "rutan"
+  ],
+  "a": "Rumah tahanan: tempat orang ditahan selama kasusnya masih diproses."
+ },
+ {
+  "t": [
+   "sidak"
+  ],
+  "a": "Inspeksi mendadak, datang ngecek tanpa kasih tahu dulu."
+ },
+ {
+  "t": [
+   "pungli"
+  ],
+  "a": "Pungutan liar: minta uang di luar aturan."
+ },
+ {
+  "t": [
+   "P3K paruh waktu",
+   "PPPK paruh waktu"
+  ],
+  "a": "Pegawai kontrak pemerintah yang kerjanya nggak full, gajinya juga lebih kecil."
+ },
+ {
+  "t": [
+   "P3K",
+   "PPPK"
+  ],
+  "a": "Pegawai pemerintah dengan kontrak kerja, bukan PNS."
+ },
+ {
+  "t": [
+   "ASN"
+  ],
+  "a": "Aparatur sipil negara: PNS dan P3K."
+ },
+ {
+  "t": [
+   "honorer"
+  ],
+  "a": "Pekerja di instansi pemerintah yang belum berstatus ASN, biasanya gajinya kecil."
+ },
+ {
+  "t": [
+   "TPG",
+   "tunjangan profesi guru"
+  ],
+  "a": "Tunjangan buat guru yang udah punya sertifikat pendidik."
+ },
+ {
+  "t": [
+   "PPG"
+  ],
+  "a": "Pendidikan profesi guru, jalur buat dapet sertifikat pendidik."
+ },
+ {
+  "t": [
+   "Dapodik"
+  ],
+  "a": "Database resmi sekolah, guru, dan murid."
+ },
+ {
+  "t": [
+   "Sisdiknas"
+  ],
+  "a": "Sistem Pendidikan Nasional, nama UU utama soal pendidikan."
+ },
+ {
+  "t": [
+   "kodifikasi"
+  ],
+  "a": "Ngegabungin beberapa undang-undang jadi satu."
+ },
+ {
+  "t": [
+   "NCB",
+   "non-conviction based"
+  ],
+  "a": "Merampas aset tanpa nunggu pelakunya divonis bersalah."
+ },
+ {
+  "t": [
+   "illicit enrichment"
+  ],
+  "a": "Kekayaan pejabat yang naik nggak wajar dan nggak bisa dijelasin asalnya."
+ },
+ {
+  "t": [
+   "in rem"
+  ],
+  "a": "Gugatan terhadap bendanya (asetnya), bukan orangnya."
+ },
+ {
+  "t": [
+   "iktikad baik",
+   "itikad baik"
+  ],
+  "a": "Jujur dan nggak tahu kalau ada masalah, misalnya beli barang tanpa tahu asalnya dari kejahatan."
+ },
+ {
+  "t": [
+   "due process"
+  ],
+  "a": "Proses hukum yang adil: ada bukti, ada hakim, ada kesempatan membela diri."
+ },
+ {
+  "t": [
+   "DPO"
+  ],
+  "a": "Daftar pencarian orang alias buronan."
+ },
+ {
+  "t": [
+   "red notice"
+  ],
+  "a": "Permintaan internasional lewat Interpol buat nyari buronan."
+ },
+ {
+  "t": [
+   "TPPU"
+  ],
+  "a": "Tindak pidana pencucian uang: nyamarin asal uang hasil kejahatan."
+ },
+ {
+  "t": [
+   "KUHP"
+  ],
+  "a": "Kitab hukum pidana: daftar perbuatan yang dilarang dan hukumannya."
+ },
+ {
+  "t": [
+   "KUHAP"
+  ],
+  "a": "Aturan cara jalannya proses pidana: dari penyidikan sampai sidang."
+ },
+ {
+  "t": [
+   "putusan MK",
+   "Mahkamah Konstitusi"
+  ],
+  "a": "Pengadilan yang ngecek apakah sebuah UU sesuai UUD 1945. Putusannya wajib diikuti."
+ },
+ {
+  "t": [
+   "inkrah",
+   "berkekuatan hukum tetap"
+  ],
+  "a": "Putusan pengadilan yang udah final, nggak bisa dibanding lagi."
+ },
+ {
+  "t": [
+   "MBG"
+  ],
+  "a": "Makan Bergizi Gratis, program makan gratis dari pemerintah."
+ },
+ {
+  "t": [
+   "BPIH"
+  ],
+  "a": "Total biaya haji per jemaah, sebagian dibayar jemaah dan sebagian dari dana kelola haji."
+ },
+ {
+  "t": [
+   "Dewas"
+  ],
+  "a": "Dewan pengawas sebuah lembaga."
+ },
+ {
+  "t": [
+   "Kapolri"
+  ],
+  "a": "Kepala Kepolisian RI, pimpinan tertinggi polisi."
+ },
+ {
+  "t": [
+   "Ombudsman"
+  ],
+  "a": "Lembaga negara yang ngawasin layanan publik dan nerima aduan warga."
+ },
+ {
+  "t": [
+   "lima pagar"
+  ],
+  "a": "Pengaman atau batasan dalam aturan, biar nggak disalahgunakan aparat."
+ }
 ]
