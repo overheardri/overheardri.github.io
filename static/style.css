@@ -310,3 +310,9 @@ ol.said{list-style:none;margin:0;padding:0;max-width:960px;border-top:1px solid 
 .steps .card h3{font:750 21px/1.2 var(--disp);font-stretch:92%;margin:0 0 6px}
 .status{background:var(--card);border-left:5px solid var(--red);padding:14px 18px;margin:18px 0;font-size:15px;max-width:78ch}
 @media (max-width:640px){.page .points li{grid-template-columns:minmax(0,1fr)}}
+
+/* Plain-language term tooltips */
+.term{border-bottom:1.5px dotted var(--acc);cursor:help;border-radius:1px}
+.term:hover,.term:focus-visible{background:color-mix(in srgb,var(--acc) 12%,transparent);outline:none}
+.tip{position:absolute;z-index:60;background:#121110;color:#F2EEE3;font:500 14.5px/1.45 var(--sans);padding:11px 14px;border-radius:6px;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+@media (prefers-color-scheme:dark){.tip{background:#F2EEE3;color:#121110}}

@@ -78,4 +78,71 @@
       trn.textContent = t ? c + ' bagian cocok' : '';
     });
   }
+  // Plain-language tooltips: the first use of each official term in a block gets a dotted underline;
+  // tapping or hovering shows an everyday explanation from static/kamus.json.
+  var root = document.querySelector('main');
+  var base = (document.querySelector('script[src$="site.js"]') || {}).src || '';
+  if (root && base) {
+    fetch(base.replace(/site\.js.*$/, 'kamus.json')).then(function (r) { return r.json(); }).then(function (kamus) {
+      var arti = {}, words = [];
+      kamus.forEach(function (k) { k.t.forEach(function (w) { arti[w.toLowerCase()] = k.a; words.push(w); }); });
+      words.sort(function (a, b) { return b.length - a.length; });
+      var esc = words.map(function (w) { return w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+      var re = new RegExp('(^|[^A-Za-z0-9])(' + esc.join('|') + ')(?![A-Za-z0-9])', 'i');
+      var SKIP = 'a,button,h1,h2,h3,dt,input,script,style,.ts,.tr,.tags,.meta,.crumb,.facts,.modes,.chips,.term,.wm,.giant,.sticker,.ticker,.mast-meta';
+      var seen = new Map();
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+      var nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach(function (node) {
+        var el = node.parentElement;
+        if (!el || el.closest(SKIP)) return;
+        var scope = el.closest('.mode-santai,.mode-gosip,.mode-serius,.mode-santai-inline,.mode-gosip-inline,.mode-serius-inline') || root;
+        if (!seen.has(scope)) seen.set(scope, {});
+        var used = seen.get(scope);
+        var text = node.nodeValue, m, frag = null, last = 0, offset = 0;
+        while ((m = re.exec(text.slice(offset)))) {
+          var start = offset + m.index + m[1].length, word = m[2], key = word.toLowerCase();
+          offset = start + word.length;
+          if (used[arti[key]]) continue;
+          used[arti[key]] = 1;
+          frag = frag || document.createDocumentFragment();
+          frag.appendChild(document.createTextNode(text.slice(last, start)));
+          var t = document.createElement('span');
+          t.className = 'term'; t.tabIndex = 0; t.textContent = word;
+          t.setAttribute('role', 'button'); t.dataset.arti = arti[key];
+          t.setAttribute('aria-label', word + ': ' + arti[key]);
+          frag.appendChild(t);
+          last = offset;
+        }
+        if (frag) { frag.appendChild(document.createTextNode(text.slice(last))); node.parentNode.replaceChild(frag, node); }
+      });
+      var tip = document.createElement('div');
+      tip.className = 'tip'; tip.setAttribute('role', 'tooltip'); tip.hidden = true;
+      document.body.appendChild(tip);
+      var current = null;
+      function show(t) {
+        current = t; tip.textContent = t.dataset.arti; tip.hidden = false;
+        var r = t.getBoundingClientRect(), w = Math.min(300, innerWidth - 32);
+        tip.style.width = w + 'px';
+        tip.style.left = Math.max(16, Math.min(r.left + scrollX, scrollX + innerWidth - w - 16)) + 'px';
+        tip.style.top = (r.bottom + scrollY + 8) + 'px';
+      }
+      function hide() { tip.hidden = true; current = null; }
+      document.addEventListener('click', function (e) {
+        var t = e.target.closest('.term');
+        if (t) { if (current === t) hide(); else show(t); } else if (!e.target.closest('.tip')) hide();
+      });
+      document.addEventListener('keydown', function (e) {
+        var t = e.target.closest && e.target.closest('.term');
+        if (t && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); show(t); }
+        if (e.key === 'Escape') hide();
+      });
+      if (matchMedia('(hover: hover)').matches) {
+        root.addEventListener('mouseover', function (e) { var t = e.target.closest('.term'); if (t) show(t); });
+        root.addEventListener('mouseout', function (e) { if (e.target.closest('.term')) hide(); });
+      }
+      addEventListener('scroll', function () { if (current) show(current); }, { passive: true });
+    }).catch(function () {});
+  }
 })();
