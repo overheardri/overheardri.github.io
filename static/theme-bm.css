@@ -1,0 +1,39 @@
+/* Theme "bm": clean civic-tech look (white + pale lavender, deep navy and indigo accents, soft cards, Rubik/Manrope).
+   Loaded after style.css only when built with RISALAH_THEME=bm. */
+:root{
+  --bg:#f2f5fc;--card:#ffffff;--ink:#14143a;--muted:#5b5f7a;--line:#e3e6f3;
+  --merah:#3030a1;--merah-soft:#e8e9fb;--navy:#131378;
+  --serif:"Rubik",ui-sans-serif,system-ui,sans-serif;
+  --sans:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --shadow:0 10px 30px -22px rgba(43,43,43,.45);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0e0f24;--card:#171936;--ink:#eceefe;--muted:#a6a9c8;--line:#2a2d55;
+  --merah:#9da2ff;--merah-soft:#232657;--navy:#c9cbff;
+}}
+body{background:var(--bg)}
+h1,h2,h3{font-weight:500;letter-spacing:-.015em}
+header.top{background:var(--card);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+.logo{font:600 21px/1 var(--serif);color:var(--navy)}
+.logo b{color:var(--merah)}
+nav.main a{font-weight:600;font-size:14.5px}
+nav.main a.on{color:var(--navy)}
+.card,.callout,details.transcript,.spill,.gg,.moment,.bubble{border-radius:18px}
+.card{border:1px solid var(--line);box-shadow:var(--shadow)}
+a.card:hover{border-color:var(--merah);transform:translateY(-1px)}
+a.card{transition:transform .15s ease,border-color .15s ease}
+.badge{border-radius:99px;background:var(--merah-soft);border-color:transparent;color:var(--merah)}
+.badge.red{background:var(--navy);color:var(--card);border-color:var(--navy)}
+.eyebrow{color:var(--merah)}
+.callout{border-left-color:var(--merah)}
+.mode-switch{background:var(--card);box-shadow:var(--shadow)}
+.mode-switch button[aria-pressed=true]{background:var(--navy);color:#fff}
+.chips button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.chips button{border-radius:99px}
+.said li::before{background:var(--merah)}
+a.ts{color:var(--merah);background:var(--merah-soft);padding:2px 8px;border-radius:99px;font-size:12.5px}
+.stats b{color:var(--navy)}
+.profile-photo,.member-photo{border-radius:16px;box-shadow:var(--shadow)}
+.hero,.profile-head{background:linear-gradient(180deg,var(--merah-soft),transparent);border-radius:22px;padding:22px}
+footer{background:var(--card)}
+@media (prefers-color-scheme:dark){.badge.red{color:#0e0f24}.mode-switch button[aria-pressed=true],.chips button[aria-pressed=true]{color:#0e0f24}}
