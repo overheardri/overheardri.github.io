@@ -41,6 +41,14 @@
     });
   }
 
+  // Share bar: copy the page link
+  document.querySelectorAll('.share .copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var done = function () { b.textContent = 'Link tersalin ✓'; setTimeout(function () { b.textContent = 'Salin link'; }, 2000); };
+      if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.url).then(done, function () {}); else done();
+    });
+  });
+
   // Home: search across meetings
   var q = document.getElementById('q');
   if (q) {
