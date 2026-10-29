@@ -1,6 +1,7 @@
 // Overheard RI: reading modes, in-page video player, search and filters.
 (function () {
   var KEY = 'risalah-mode', body = document.body;
+  var EN = document.documentElement.lang === 'en';
   function setMode(m) {
     body.dataset.mode = m;
     document.querySelectorAll('[data-set-mode]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.setMode === m); });
@@ -20,7 +21,7 @@
     if (poster) poster.remove();
     if (!f) {
       f = document.createElement('iframe');
-      f.title = 'Video rapat';
+      f.title = EN ? 'Meeting video' : 'Video rapat';
       f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
       f.allowFullscreen = true;
       player.appendChild(f);
@@ -44,7 +45,7 @@
   // Share bar: copy the page link
   document.querySelectorAll('.share .copy').forEach(function (b) {
     b.addEventListener('click', function () {
-      var done = function () { b.textContent = 'Link tersalin ✓'; setTimeout(function () { b.textContent = 'Salin link'; }, 2000); };
+      var label = b.textContent, done = function () { b.textContent = EN ? 'Link copied ✓' : 'Link tersalin ✓'; setTimeout(function () { b.textContent = label; }, 2000); };
       if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.url).then(done, function () {}); else done();
     });
   });
@@ -62,7 +63,7 @@
       idx.forEach(function (m) { if ((m.judul + ' ' + m.badan + ' ' + m.jenis + ' ' + m.teks).toLowerCase().indexOf(term) >= 0) hits[m.id] = 1; });
       cards.forEach(function (c) { c.hidden = !hits[c.dataset.id]; });
       var n = Object.keys(hits).length;
-      info.textContent = n ? n + ' rapat cocok.' : 'Tidak ada rapat yang cocok.';
+      info.textContent = EN ? (n ? n + ' matching meeting' + (n > 1 ? 's.' : '.') : 'No matching meetings.') : (n ? n + ' rapat cocok.' : 'Tidak ada rapat yang cocok.');
     });
   }
 
@@ -83,7 +84,7 @@
     trq.addEventListener('input', function () {
       var t = trq.value.trim().toLowerCase(), c = 0;
       lines.forEach(function (r) { var hit = !t || r.textContent.toLowerCase().indexOf(t) >= 0; r.hidden = !hit; if (hit && t) c++; });
-      trn.textContent = t ? c + ' bagian cocok' : '';
+      trn.textContent = t ? c + (EN ? ' matching parts' : ' bagian cocok') : '';
     });
   }
   // Plain-language tooltips: the first use of each official term in a block gets a dotted underline;
@@ -91,7 +92,7 @@
   var root = document.querySelector('main');
   var base = (document.querySelector('script[src$="site.js"]') || {}).src || '';
   if (root && base) {
-    fetch(base.replace(/site\.js.*$/, 'kamus.json')).then(function (r) { return r.json(); }).then(function (kamus) {
+    fetch(base.replace(/site\.js.*$/, EN ? 'kamus.en.json' : 'kamus.json')).then(function (r) { return r.json(); }).then(function (kamus) {
       var arti = {}, words = [];
       kamus.forEach(function (k) { k.t.forEach(function (w) { arti[w.toLowerCase()] = k.a; words.push(w); }); });
       words.sort(function (a, b) { return b.length - a.length; });

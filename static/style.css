@@ -325,3 +325,17 @@ ol.said{list-style:none;margin:0;padding:0;max-width:960px;border-top:1px solid 
 .share .wa:hover{background:#17663A}
 .share .copy{background:transparent;color:var(--ink);border:1px solid var(--rule-2)}
 .share .copy:hover{border-color:var(--ink)}
+
+/* Language toggle (ID / EN), sits next to the reading-mode switch */
+.bar-end{display:flex;align-items:center;gap:8px}
+.langs{display:inline-flex;background:var(--card);border:1px solid var(--rule-2);border-radius:99px;padding:3px}
+.langs a{font:700 12.5px/1 var(--sans);letter-spacing:.04em;text-decoration:none;color:var(--muted);padding:9px 11px;border-radius:99px}
+.langs a:hover{color:var(--ink)}
+.langs a[aria-current=true]{background:var(--acc);color:#fff}
+.lang-note{font-size:13px;color:var(--muted);margin:6px 0 0}
+@media (max-width:600px){
+  .bar-row{grid-template-columns:minmax(0,1fr)}
+  .bar-end{width:100%}
+  .bar-end .modes{flex:1;display:flex}
+  .bar-end .modes button{flex:1;padding:9px 6px}
+}

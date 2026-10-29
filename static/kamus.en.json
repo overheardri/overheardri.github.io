@@ -1,0 +1,470 @@
+[
+ {
+  "t": [
+   "masa reses",
+   "reses"
+  ],
+  "a": "The time when DPR members don't hold meetings in Jakarta and instead go back to their home districts to meet residents."
+ },
+ {
+  "t": [
+   "masa sidang",
+   "masa persidangan"
+  ],
+  "a": "The time when DPR members work in Jakarta: holding meetings, debating laws, and discussing the budget."
+ },
+ {
+  "t": [
+   "dapil",
+   "daerah pemilihan"
+  ],
+  "a": "The area a DPR member represents, where they were elected in the general election."
+ },
+ {
+  "t": [
+   "rapat paripurna",
+   "paripurna"
+  ],
+  "a": "The big meeting of all DPR members. The DPR's official decisions are made here, sealed with a gavel."
+ },
+ {
+  "t": [
+   "RDPU"
+  ],
+  "a": "A meeting to hear input from outside the government: experts, organizations, ordinary citizens."
+ },
+ {
+  "t": [
+   "RDP"
+  ],
+  "a": "A DPR commission meeting with officials below minister level, such as the head of an agency or a director general."
+ },
+ {
+  "t": [
+   "raker",
+   "rapat kerja"
+  ],
+  "a": "A DPR commission meeting directly with a minister or the head of a minister-level agency."
+ },
+ {
+  "t": [
+   "panja",
+   "panitia kerja"
+  ],
+  "a": "A small team in the DPR that looks at one issue in more detail."
+ },
+ {
+  "t": [
+   "pansus"
+  ],
+  "a": "A special committee (panitia khusus): a temporary DPR team set up for one specific matter, for example a single bill."
+ },
+ {
+  "t": [
+   "fraksi"
+  ],
+  "a": "A group of DPR members from the same party."
+ },
+ {
+  "t": [
+   "komisi"
+  ],
+  "a": "A DPR working group that handles a particular area. For example, Commission III handles legal affairs."
+ },
+ {
+  "t": [
+   "Baleg",
+   "Badan Legislasi"
+  ],
+  "a": "The part of the DPR that organizes and checks the drafting of laws."
+ },
+ {
+  "t": [
+   "Banggar",
+   "Badan Anggaran"
+  ],
+  "a": "The part of the DPR that discusses the state budget (APBN) together with the government."
+ },
+ {
+  "t": [
+   "BAM",
+   "Badan Aspirasi Masyarakat"
+  ],
+  "a": "The part of the DPR that receives complaints and aspirations directly from citizens."
+ },
+ {
+  "t": [
+   "RUU"
+  ],
+  "a": "A draft law (rancangan undang-undang): a future law that is still being discussed and is not yet in force."
+ },
+ {
+  "t": [
+   "usul inisiatif DPR",
+   "RUU inisiatif"
+  ],
+  "a": "A bill proposed by the DPR itself, not by the government."
+ },
+ {
+  "t": [
+   "tingkat I",
+   "tingkat 1",
+   "tingkat satu"
+  ],
+  "a": "The first round of deliberating a bill: it is discussed in detail in a commission or body together with the government."
+ },
+ {
+  "t": [
+   "tingkat II",
+   "tingkat 2",
+   "tingkat dua"
+  ],
+  "a": "The final round for a bill, held in the plenary meeting: it is either passed or not."
+ },
+ {
+  "t": [
+   "DIM",
+   "daftar inventarisasi masalah"
+  ],
+  "a": "A list of responses to a draft bill, article by article."
+ },
+ {
+  "t": [
+   "naskah akademik"
+  ],
+  "a": "A study document explaining why a bill is needed and what it contains."
+ },
+ {
+  "t": [
+   "kuorum"
+  ],
+  "a": "The minimum number of people who must be present for a meeting to be valid."
+ },
+ {
+  "t": [
+   "aklamasi"
+  ],
+  "a": "Everyone agrees, with no vote."
+ },
+ {
+  "t": [
+   "skors"
+  ],
+  "a": "A meeting is paused for a short while and will resume later."
+ },
+ {
+  "t": [
+   "uji kelayakan",
+   "fit and proper test"
+  ],
+  "a": "A DPR test for candidates for official posts before they are approved."
+ },
+ {
+  "t": [
+   "mitra kerja"
+  ],
+  "a": "The ministries or agencies that a DPR commission oversees."
+ },
+ {
+  "t": [
+   "APBN"
+  ],
+  "a": "The state budget for one year: how much money comes in and what it is spent on."
+ },
+ {
+  "t": [
+   "APBD"
+  ],
+  "a": "The regional government budget for one year."
+ },
+ {
+  "t": [
+   "RAPBN"
+  ],
+  "a": "The draft state budget (APBN) proposed by the government, before the DPR approves it."
+ },
+ {
+  "t": [
+   "defisit"
+  ],
+  "a": "Spending is bigger than income. The shortfall is covered by borrowing."
+ },
+ {
+  "t": [
+   "PNBP"
+  ],
+  "a": "State income other than taxes, for example from mining, services, and fines."
+ },
+ {
+  "t": [
+   "TKD",
+   "transfer ke daerah"
+  ],
+  "a": "Money from the state budget (APBN) that is sent to regional governments and villages."
+ },
+ {
+  "t": [
+   "DAU",
+   "dana alokasi umum"
+  ],
+  "a": "Money from the central government to the regions that they can spend freely on basic needs, like staff salaries."
+ },
+ {
+  "t": [
+   "DAK",
+   "dana alokasi khusus"
+  ],
+  "a": "Money from the central government to the regions that can only be spent on specific activities."
+ },
+ {
+  "t": [
+   "dana bagi hasil",
+   "DBH"
+  ],
+  "a": "The regions' share of taxes and mining revenue collected by the central government."
+ },
+ {
+  "t": [
+   "SAL",
+   "saldo anggaran lebih"
+  ],
+  "a": "Leftover state money from previous years."
+ },
+ {
+  "t": [
+   "mandatory spending"
+  ],
+  "a": "Spending required by law, for example at least 20 percent of the state budget (APBN) for education."
+ },
+ {
+  "t": [
+   "BPK"
+  ],
+  "a": "The Audit Board (Badan Pemeriksa Keuangan): the institution that audits how the state uses its money."
+ },
+ {
+  "t": [
+   "BPKP"
+  ],
+  "a": "The government's own internal financial supervisor."
+ },
+ {
+  "t": [
+   "IHPS"
+  ],
+  "a": "The BPK's six-monthly report card on its findings about how state money is used."
+ },
+ {
+  "t": [
+   "WTP",
+   "wajar tanpa pengecualian"
+  ],
+  "a": "The best grade the BPK gives for a financial report (an unqualified opinion). It is not a guarantee of no corruption."
+ },
+ {
+  "t": [
+   "maladministrasi"
+  ],
+  "a": "Public service that isn't done properly: slow, asking for money, playing favorites, or breaking procedure."
+ },
+ {
+  "t": [
+   "WBP",
+   "warga binaan"
+  ],
+  "a": "The official term for people serving a sentence in prison."
+ },
+ {
+  "t": [
+   "lapas"
+  ],
+  "a": "A correctional facility (lembaga pemasyarakatan), in other words, a prison."
+ },
+ {
+  "t": [
+   "rutan"
+  ],
+  "a": "A detention center (rumah tahanan): where people are held while their case is still being processed."
+ },
+ {
+  "t": [
+   "sidak"
+  ],
+  "a": "A surprise inspection: showing up to check without warning first."
+ },
+ {
+  "t": [
+   "pungli"
+  ],
+  "a": "Illegal levies (pungutan liar): asking for money outside the rules."
+ },
+ {
+  "t": [
+   "P3K paruh waktu",
+   "PPPK paruh waktu"
+  ],
+  "a": "Part-time government contract workers, who don't work full hours and are paid less."
+ },
+ {
+  "t": [
+   "P3K",
+   "PPPK"
+  ],
+  "a": "Government employees on work contracts, not civil servants (PNS)."
+ },
+ {
+  "t": [
+   "ASN"
+  ],
+  "a": "The state civil apparatus (aparatur sipil negara): civil servants (PNS) and P3K contract employees."
+ },
+ {
+  "t": [
+   "honorer"
+  ],
+  "a": "Workers in government offices who don't yet have ASN status, usually with low pay."
+ },
+ {
+  "t": [
+   "TPG",
+   "tunjangan profesi guru"
+  ],
+  "a": "An allowance for teachers who already hold an educator certificate."
+ },
+ {
+  "t": [
+   "PPG"
+  ],
+  "a": "Teacher professional education (pendidikan profesi guru), the path to getting an educator certificate."
+ },
+ {
+  "t": [
+   "Dapodik"
+  ],
+  "a": "The official database of schools, teachers, and students."
+ },
+ {
+  "t": [
+   "Sisdiknas"
+  ],
+  "a": "The National Education System, the name of the main law on education."
+ },
+ {
+  "t": [
+   "kodifikasi"
+  ],
+  "a": "Combining several laws into one."
+ },
+ {
+  "t": [
+   "NCB",
+   "non-conviction based"
+  ],
+  "a": "Seizing assets without waiting for the offender to be found guilty."
+ },
+ {
+  "t": [
+   "illicit enrichment"
+  ],
+  "a": "An official's wealth that rises unreasonably and whose origin can't be explained."
+ },
+ {
+  "t": [
+   "in rem"
+  ],
+  "a": "A legal action against the thing itself (the asset), not the person."
+ },
+ {
+  "t": [
+   "iktikad baik",
+   "itikad baik"
+  ],
+  "a": "Acting honestly and not knowing there is a problem, for example buying something without knowing it came from a crime."
+ },
+ {
+  "t": [
+   "due process"
+  ],
+  "a": "A fair legal process: there is evidence, there is a judge, and there is a chance to defend yourself."
+ },
+ {
+  "t": [
+   "DPO"
+  ],
+  "a": "A wanted persons list (daftar pencarian orang), in other words, fugitives."
+ },
+ {
+  "t": [
+   "red notice"
+  ],
+  "a": "An international request through Interpol to find a fugitive."
+ },
+ {
+  "t": [
+   "TPPU"
+  ],
+  "a": "Money laundering (tindak pidana pencucian uang): disguising the origin of money gained from crime."
+ },
+ {
+  "t": [
+   "KUHP"
+  ],
+  "a": "The Criminal Code: the list of prohibited acts and their punishments."
+ },
+ {
+  "t": [
+   "KUHAP"
+  ],
+  "a": "The Criminal Procedure Code: the rules for how a criminal case proceeds, from investigation to trial."
+ },
+ {
+  "t": [
+   "putusan MK",
+   "Mahkamah Konstitusi"
+  ],
+  "a": "The Constitutional Court, which checks whether a law complies with the 1945 Constitution. Its rulings must be followed."
+ },
+ {
+  "t": [
+   "inkrah",
+   "berkekuatan hukum tetap"
+  ],
+  "a": "A court ruling that is already final and can no longer be appealed."
+ },
+ {
+  "t": [
+   "MBG"
+  ],
+  "a": "Makan Bergizi Gratis, the government's free meals program."
+ },
+ {
+  "t": [
+   "BPIH"
+  ],
+  "a": "The total Hajj pilgrimage cost per pilgrim, partly paid by the pilgrim and partly from the Hajj managed funds."
+ },
+ {
+  "t": [
+   "Dewas"
+  ],
+  "a": "The supervisory board (dewan pengawas) of an institution."
+ },
+ {
+  "t": [
+   "Kapolri"
+  ],
+  "a": "The Chief of the Indonesian National Police, the top commander of the police."
+ },
+ {
+  "t": [
+   "Ombudsman"
+  ],
+  "a": "A state institution that oversees public services and receives complaints from citizens."
+ },
+ {
+  "t": [
+   "lima pagar"
+  ],
+  "a": "Safeguards or limits in a regulation (literally \"five fences\"), meant to stop officials from abusing it."
+ }
+]
