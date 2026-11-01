@@ -69,11 +69,13 @@
 
   // Profiles: filter statements by topic
   var chips = [].slice.call(document.querySelectorAll('.chips button'));
-  var rows = [].slice.call(document.querySelectorAll('.said li'));
+  var rows = [].slice.call(document.querySelectorAll('.said li, .acard'));
   chips.forEach(function (b) {
     b.addEventListener('click', function () {
       chips.forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
       rows.forEach(function (r) { r.hidden = !!b.dataset.topik && r.dataset.topik !== b.dataset.topik; });
+      // Campaign page: a ticket with nothing left under this filter folds away
+      document.querySelectorAll('.camp-sec[id]').forEach(function (sec) { sec.hidden = !sec.querySelector('.acard:not([hidden])'); });
     });
   });
 

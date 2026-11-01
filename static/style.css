@@ -358,3 +358,57 @@ ol.said{list-style:none;margin:0;padding:0;max-width:960px;border-top:1px solid 
 .rule-abs summary{cursor:pointer;font-weight:700}
 .rule-abs p{font-size:15px;line-height:1.6;color:var(--muted);margin:12px 0 0}
 .rule-src a{font-weight:700;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:4px}
+
+/* Artis di Kampanye: portrait cards, same treatment for all three tickets */
+.camp .lede{margin-bottom:10px}
+.camp-note{color:var(--muted);max-width:68ch}
+.camp-note.small{font-size:14px;margin-top:10px}
+.camp-jump{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:26px 0 0;max-width:720px}
+.camp-jump a{display:flex;flex-direction:column;gap:2px;padding:14px;background:var(--card);border:1px solid var(--rule-2);border-radius:14px;text-decoration:none;color:var(--ink)}
+.camp-jump a:hover{border-color:var(--acc)}
+.camp-jump b{font:800 34px/1 var(--disp);font-stretch:80%;color:var(--acc);transition:color .25s}
+.camp-jump span{font-weight:700;font-size:14px;line-height:1.2}
+.camp-jump small{color:var(--muted);font-size:13px}
+.camp .chips{margin:22px 0 0}
+.camp-sec{margin-top:44px;scroll-margin-top:90px}
+.camp-sec[hidden]{display:none}
+.camp-sec h2{display:flex;align-items:center;gap:12px;margin:0 0 18px;flex-wrap:wrap}
+.camp-no{display:inline-grid;place-items:center;min-width:48px;height:48px;padding:0 8px;border-radius:50%;background:var(--acc);color:#fff;font:800 22px/1 var(--disp);transform:rotate(-6deg);transition:background .25s}
+.acards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.acard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--rule-2);border-radius:16px;overflow:hidden;transition:transform .15s}
+.acard[hidden]{display:none}
+.acard:hover{transform:translateY(-3px)}
+.aph{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;background:var(--rule)}
+.ainit{display:grid;place-items:center;font:800 64px/1 var(--disp);font-stretch:80%;color:var(--muted);background:var(--rule)}
+.abody{position:relative;padding:22px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.abody p{margin:0;font-size:14.5px;line-height:1.4}
+.abody h3{margin:0;font:800 21px/1.05 var(--disp);font-stretch:85%;letter-spacing:-.02em}
+.asticker{position:absolute;top:-13px;left:12px;padding:5px 10px;border-radius:99px;background:var(--acc);color:#fff;font:700 12px/1 var(--sans);transform:rotate(-2deg);transition:background .25s}
+.asticker.soft{background:var(--paper);color:var(--ink);border:1px solid var(--rule-2)}
+.abody .aknown{color:var(--muted);font-size:13.5px}
+.abody .asrc{margin-top:auto;padding-top:8px;font-size:13px;color:var(--muted)}
+.amoves{list-style:none;margin:14px 0 0;padding:0;max-width:760px;border-top:1px solid var(--rule-2)}
+.amoves li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.amoves b{min-width:150px}
+.amoves i{font-style:normal;color:var(--acc)}
+.amoves a{margin-left:auto;font-size:13px;color:var(--muted)}
+.camp-credits{margin-top:40px}
+.camp-credits summary{cursor:pointer;font-weight:700}
+.camp-credits ul{padding-left:18px;columns:2;column-gap:28px}
+@media (max-width:640px){
+  .acards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .abody{padding:20px 10px 12px}
+  .abody h3{font-size:18px}
+  .abody p{font-size:13.5px}
+  .camp-jump b{font-size:28px}
+  .camp-jump a{padding:10px}
+  .camp-credits ul{columns:1}
+}
+
+/* The menu grew past what one row holds on laptops: give it its own scrolling row earlier */
+@media (max-width:1400px){
+  .bar-row{grid-template-columns:1fr auto;padding-block:10px 0;min-height:0}
+  .nav{grid-column:1/-1;order:3;overflow-x:auto;gap:20px;scrollbar-width:none;padding:0 0 2px}
+  .nav::-webkit-scrollbar{display:none}
+}
+@media (max-width:600px){.bar-row{grid-template-columns:minmax(0,1fr)}}
